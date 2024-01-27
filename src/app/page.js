@@ -4,23 +4,24 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
+
+      {/* DATA PASSING */}
+      <User name = "Happy"/>
+      <User name = "Mala"/>
+      <User name = "keya"/>
+      <User name = "Riva"/>
+
       <h1>First Page</h1>
-      <User/>
-    
-    {/* REUSE COMPONENTS */}
-      <User/>
-      <User/>
-      <User/>
-      
     </main>
   );
 }
 
-const User=()=>{
+//PASSING AS A PROPS
+const User=(props)=>{
   return(
     <div>
       <h2>
-        I am Happy
+        I am {props.name}
       </h2>
     </div>
   )
