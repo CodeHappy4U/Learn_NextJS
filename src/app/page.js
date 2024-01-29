@@ -1,17 +1,20 @@
 'use client'
+import { useState } from "react";
 import styles from "./page.module.css";
 
 
 export default function Home() {
-  const mango= (item)=>{
-    alert(item)
+
+  // USING REACT STATE
+  const [name,setName] = useState("Happy") //TEMPORARY NAME
+  const mango=()=>{
+    setName("Raja") //USING SETTING STATE
   }
   return (
-    <main className={styles.main}>
-      <h1>Events, Function and State</h1>
-
-      {/* CALLING A FUNCTION */}
-      <button onClick={()=>mango("color")}>Click Me</button> 
+    <main className={styles.main}> 
+    {/* HTML INSIDE JSX */}
+      <h1>Events, Function and State {name}</h1>
+      <button onClick={()=>mango()}>Click Me</button> 
     </main>
   );
 }
