@@ -22,7 +22,11 @@ export default function Home() {
     <main className={styles.main}> 
       <h1>Events, Function and State {name}</h1>
       <button onClick={()=>mango()}>Click Me</button> 
-      <InnerComp/>
+      {/* CALLING A COMPONENT */}
+      <InnerComp/> 
+
+      {/* CALLING A fUNCTION AS COPONENT */}
+      {InnerComp()}
     </main>
   )
 }
