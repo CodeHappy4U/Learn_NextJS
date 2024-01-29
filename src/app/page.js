@@ -3,15 +3,15 @@ import styles from "./page.module.css";
 
 
 export default function Home() {
-  const mango= ()=>{
-    alert("Fruit")
+  const mango= (item)=>{
+    alert(item)
   }
   return (
     <main className={styles.main}>
       <h1>Events, Function and State</h1>
 
-      {/* USING ONCLICK AND ARROW FUNCTION */}
-      <button onClick={mango}>Click Me</button> 
+      {/* CALLING A FUNCTION */}
+      <button onClick={()=>mango("color")}>Click Me</button> 
     </main>
   );
 }
