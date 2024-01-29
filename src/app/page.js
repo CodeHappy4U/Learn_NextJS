@@ -26,3 +26,7 @@ const User=(props)=>{
     </div>
   )
 }
+
+// Automatically Type Declare : JavaScript Vs TypeScript : what type of data you converting to (browser not understand)
+// TypeScript---> Browser ---> JS
+
