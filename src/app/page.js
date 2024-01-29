@@ -1,32 +1,11 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-
-      {/* DATA PASSING */}
-      <User name = "Happy"/>
-      <User name = "Mala"/>
-      <User name = "keya"/>
-      <User name = "Riva"/>
-
-      <h1>First Page</h1>
+      <h1>Events, Function and State</h1>
+      <button onClick={()=>alert ("Hello")}>Click Me</button> //USE AS A SERVER COMPONENT
     </main>
   );
 }
-
-//PASSING AS A PROPS
-const User=(props)=>{
-  return(
-    <div>
-      <h2>
-        I am {props.name}
-      </h2>
-    </div>
-  )
-}
-
-// Automatically Type Declare : JavaScript Vs TypeScript : what type of data you converting to (browser not understand)
-// TypeScript---> Browser ---> JS
-
