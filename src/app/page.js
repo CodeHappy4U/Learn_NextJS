@@ -5,28 +5,11 @@ import styles from "./page.module.css";
 
 export default function Home() {
 
-  // USING REACT STATE
-  const [name,setName] = useState("Happy") //TEMPORARY NAME
   
-  const mango=()=>{
-    setName("Raja") //USING SETTING STATE
-  }
-
-  //COMPNENT INSIDE COMPONENT
-  const InnerComp=()=>{
-    return(
-      <h1>Inner Component</h1>
-    )
-  }
   return (
     <main className={styles.main}> 
-      <h1>Events, Function and State {name}</h1>
-      <button onClick={()=>mango()}>Click Me</button> 
-      {/* CALLING A COMPONENT */}
-      <InnerComp/> 
-
-      {/* CALLING A fUNCTION AS COPONENT */}
-      {InnerComp()}
+      <h1>7. Basic Routing</h1>
+     
     </main>
   )
 }
