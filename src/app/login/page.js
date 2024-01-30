@@ -11,7 +11,10 @@ const Login=()=>{
             <Link  href= "/" >Go To Home Page</Link> 
             <br/>
             <br/>
-            <button  onClick={() => router.push('/')}> Go to Home Page </button>
+            <button  onClick={() => router.push('/login/loginstudent')}> Go to Login Student Page </button>
+            &nbsp;
+            &nbsp;
+            <button  onClick={() => router.push('/login/loginteacher')}> Go to Login Teacher Page </button>
             
         </div>
     )

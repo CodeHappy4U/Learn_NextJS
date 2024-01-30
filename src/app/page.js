@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function Home() {
   const router =  useRouter();
 
-  // mAKING A FUNCTION AND PASS A PARAMETER
   const navigate=(name)=>{
     router.push(name);
   }
@@ -15,7 +14,7 @@ export default function Home() {
   return (
     // <main className={styles.main}> 
     <main> 
-      <h1>8. Basic Routing/ Page Navigation/ Links </h1> 
+      <h1>9. Nested Routing</h1> 
 
       <Link href="/login">Go To Login Page</Link>
       <br/>
