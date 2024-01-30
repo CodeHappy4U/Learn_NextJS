@@ -14,7 +14,7 @@ export default function Home() {
   return (
     // <main className={styles.main}> 
     <main> 
-      <h1>9. Nested Routing</h1> 
+      <h1>10. Common Layout</h1> 
 
       <Link href="/login">Go To Login Page</Link>
       <br/>
